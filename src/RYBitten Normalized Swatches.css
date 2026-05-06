@@ -1,0 +1,27 @@
+/* If you end up using this, consider donating: https://ko-fi.com/colorparrot — thanks, David Aerne */
+
+:root {
+  --duckbutter-50: #f8ece1;
+  --duckbutter-100: #f4e7dd;
+  --duckbutter-200: #e7dbd5;
+  --duckbutter-300: #cececa;
+  --duckbutter-400: #a7b088;
+  --duckbutter-500: #d5bf51;
+  --duckbutter-600: #f09b15;
+  --duckbutter-700: #d35616;
+  --duckbutter-800: #ad3c36;
+  --duckbutter-900: #3b273c;
+  --duckbutter-950: #242126;
+
+  --toad-50: #f8ecdf;
+  --toad-100: #f8e9dc;
+  --toad-200: #efdad1;
+  --toad-300: #cfbbbc;
+  --toad-400: #a2b1c0;
+  --toad-500: #72937a;
+  --toad-600: #9ba432;
+  --toad-700: #d89a12;
+  --toad-800: #9e4814;
+  --toad-900: #693326;
+  --toad-950: #292025;
+}

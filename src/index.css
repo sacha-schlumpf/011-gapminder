@@ -1,0 +1,19 @@
+body {
+  font-family: "Neco", sans-serif;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 32pt;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.dataTitle {
+  font-weight: 700;
+}

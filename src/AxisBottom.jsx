@@ -1,7 +1,7 @@
 // tick length
 const TICK_LENGTH = 6;
 
-export const AxisBottom = ({ xScale, pixelsPerTick }) => {
+export const AxisBottom = ({ xScale, pixelsPerTick, boundsHeight, label }) => {
   const range = xScale.range();
 
   const width = range[1] - range[0];
@@ -22,11 +22,12 @@ export const AxisBottom = ({ xScale, pixelsPerTick }) => {
       {/* Ticks and labels */}
       {xScale.ticks(numberOfTicksTarget).map((value) => (
         <g key={value} transform={`translate(${xScale(value)}, 0)`}>
+          <line y1={0} y2={-boundsHeight} stroke="currentColor" opacity={0.1} />
           <line y2={TICK_LENGTH} stroke="currentColor" />
           <text
             key={value}
             style={{
-              fontSize: "10px",
+              fontSize: "12px",
               textAnchor: "middle",
               transform: "translateY(20px)",
             }}
@@ -35,6 +36,15 @@ export const AxisBottom = ({ xScale, pixelsPerTick }) => {
           </text>
         </g>
       ))}
+      <text
+        className="dataTitle"
+        x={width}
+        y={45}
+        fontSize={14}
+        textAnchor="end"
+      >
+        {label}
+      </text>
     </>
   );
 };
